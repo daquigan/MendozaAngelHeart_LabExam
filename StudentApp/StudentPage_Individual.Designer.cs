@@ -18,23 +18,121 @@
 
         private void InitializeComponent()
         {
-            this.lblStudentId = new System.Windows.Forms.Label();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblBirthdate = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.lblContact = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblGuardian = new System.Windows.Forms.Label();
-            this.lblHobbies = new System.Windows.Forms.Label();
-            this.lblNickname = new System.Windows.Forms.Label();
-            this.lblCourse = new System.Windows.Forms.Label();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lblStudentId = new Label();
+            lblFullName = new Label();
+            lblAddress = new Label();
+            lblBirthdate = new Label();
+            lblAge = new Label();
+            lblContact = new Label();
+            lblEmail = new Label();
+            lblGuardian = new Label();
+            lblHobbies = new Label();
+            lblNickname = new Label();
+            lblCourse = new Label();
+            lblYear = new Label();
+            SuspendLayout();
+            // 
+            // lblStudentId
+            // 
+            lblStudentId.Location = new Point(0, 0);
+            lblStudentId.Name = "lblStudentId";
+            lblStudentId.Size = new Size(100, 23);
+            lblStudentId.TabIndex = 0;
+            // 
+            // lblFullName
+            // 
+            lblFullName.Location = new Point(0, 0);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(100, 23);
+            lblFullName.TabIndex = 0;
+            // 
+            // lblAddress
+            // 
+            lblAddress.Location = new Point(0, 0);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(100, 23);
+            lblAddress.TabIndex = 0;
+            // 
+            // lblBirthdate
+            // 
+            lblBirthdate.Location = new Point(0, 0);
+            lblBirthdate.Name = "lblBirthdate";
+            lblBirthdate.Size = new Size(100, 23);
+            lblBirthdate.TabIndex = 0;
+            // 
+            // lblAge
+            // 
+            lblAge.Location = new Point(0, 0);
+            lblAge.Name = "lblAge";
+            lblAge.Size = new Size(100, 23);
+            lblAge.TabIndex = 0;
+            // 
+            // lblContact
+            // 
+            lblContact.Location = new Point(0, 0);
+            lblContact.Name = "lblContact";
+            lblContact.Size = new Size(100, 23);
+            lblContact.TabIndex = 0;
+            // 
+            // lblEmail
+            // 
+            lblEmail.Location = new Point(0, 0);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(100, 23);
+            lblEmail.TabIndex = 0;
+            // 
+            // lblGuardian
+            // 
+            lblGuardian.Location = new Point(0, 0);
+            lblGuardian.Name = "lblGuardian";
+            lblGuardian.Size = new Size(100, 23);
+            lblGuardian.TabIndex = 0;
+            // 
+            // lblHobbies
+            // 
+            lblHobbies.Location = new Point(0, 0);
+            lblHobbies.Name = "lblHobbies";
+            lblHobbies.Size = new Size(100, 23);
+            lblHobbies.TabIndex = 0;
+            // 
+            // lblNickname
+            // 
+            lblNickname.Location = new Point(0, 0);
+            lblNickname.Name = "lblNickname";
+            lblNickname.Size = new Size(100, 23);
+            lblNickname.TabIndex = 0;
+            // 
+            // lblCourse
+            // 
+            lblCourse.Location = new Point(0, 0);
+            lblCourse.Name = "lblCourse";
+            lblCourse.Size = new Size(100, 23);
+            lblCourse.TabIndex = 0;
+            // 
+            // lblYear
+            // 
+            lblYear.Location = new Point(0, 0);
+            lblYear.Name = "lblYear";
+            lblYear.Size = new Size(100, 23);
+            lblYear.TabIndex = 0;
+            // 
+            // StudentPage_Individual
+            // 
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(522, 539);
+            Enabled = false;
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "StudentPage_Individual";
+            Text = "Student Details";
+            TransparencyKey = Color.FromArgb(255, 192, 192);
+            ResumeLayout(false);
+        }
 
-            // 
-            // Labels
-            // 
+        public void SetupLabels()
+        {
             int yOffset = 20;
             int xOffset = 20;
             int spacing = 30;
@@ -46,9 +144,6 @@
                 lblCourse, lblYear
             };
 
-
-
-
             foreach (var label in labels)
             {
                 label.AutoSize = true;
@@ -57,18 +152,6 @@
                 this.Controls.Add(label);
                 yOffset += spacing;
             }
-
-
-            // 
-            // StudentPage_Individual
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 500);
-            this.Name = "StudentPage_Individual";
-            this.Text = "Student Details";
-            this.ResumeLayout(false);
-            this.PerformLayout();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿// StudentPage_Individual.cs
+﻿
 using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
@@ -15,6 +15,7 @@ namespace StudentApp
             InitializeComponent();
             this.studentId = studentId;
             LoadStudentDetails();
+            SetupLabels();
         }
 
         private void LoadStudentDetails()

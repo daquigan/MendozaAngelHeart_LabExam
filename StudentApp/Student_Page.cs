@@ -1,4 +1,4 @@
-﻿// Student_Page.cs
+﻿
 using System;
 using System.Data;
 using MySql.Data.MySqlClient;
@@ -21,7 +21,7 @@ namespace StudentApp
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT studentId, CONCAT(firstName, ' ', lastName) AS fullName FROM StudentRecordTB", conn);
+                MySqlDataAdapter da = new MySqlDataAdapter("SELECT studentId AS StudentID, CONCAT(firstName, ' ', lastName) AS FullName FROM StudentRecordTB", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 studentGridView.DataSource = dt;
@@ -36,6 +36,11 @@ namespace StudentApp
                 StudentPage_Individual individualPage = new StudentPage_Individual(studentId);
                 individualPage.Show();
             }
+        }
+
+        private void Student_Page_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
