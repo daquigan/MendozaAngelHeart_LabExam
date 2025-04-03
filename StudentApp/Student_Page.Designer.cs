@@ -32,11 +32,11 @@ namespace StudentApp
             studentGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             studentGridView.Columns.AddRange(new DataGridViewColumn[] { ViewBtn });
             studentGridView.GridColor = SystemColors.GrayText;
-            studentGridView.Location = new Point(13, 7);
-            studentGridView.Margin = new Padding(4, 6, 4, 6);
+            studentGridView.Location = new Point(13, 6);
+            studentGridView.Margin = new Padding(4, 5, 4, 5);
             studentGridView.Name = "studentGridView";
             studentGridView.RowHeadersWidth = 51;
-            studentGridView.Size = new Size(410, 271);
+            studentGridView.Size = new Size(519, 224);
             studentGridView.TabIndex = 0;
             studentGridView.CellContentClick += studentGridView_CellContentClick;
             // 
@@ -47,18 +47,18 @@ namespace StudentApp
             ViewBtn.Name = "ViewBtn";
             ViewBtn.Text = "VIEW";
             ViewBtn.UseColumnTextForButtonValue = true;
-            ViewBtn.Width = 68;
+            ViewBtn.Width = 71;
             // 
             // Student_Page
             // 
-            AutoScaleDimensions = new SizeF(10F, 23F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(429, 292);
+            ClientSize = new Size(534, 233);
             Controls.Add(studentGridView);
-            Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 6, 4, 6);
+            Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Student_Page";
-            Text = "Student Page";
+            Text = "Student List";
             Load += Student_Page_Load;
             ((System.ComponentModel.ISupportInitialize)studentGridView).EndInit();
             ResumeLayout(false);

@@ -21,7 +21,7 @@ namespace StudentApp
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT studentId AS StudentID, CONCAT(firstName, ' ', lastName) AS FullName FROM StudentRecordTB", conn);
+                MySqlDataAdapter da = new MySqlDataAdapter("SELECT studentId AS StudentID, CONCAT(firstName, ' ',middleName,' ', lastName) AS FullName FROM StudentRecordTB", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 studentGridView.DataSource = dt;
