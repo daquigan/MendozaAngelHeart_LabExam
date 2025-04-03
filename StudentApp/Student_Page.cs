@@ -25,6 +25,8 @@ namespace StudentApp
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 studentGridView.DataSource = dt;
+                studentGridView.Columns["FullName"].HeaderText = "Full Name";
+                studentGridView.Columns["studentId"].HeaderText = "Student ID";
             }
         }
 

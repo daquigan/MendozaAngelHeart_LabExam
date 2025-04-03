@@ -54,5 +54,9 @@ namespace StudentApp
             }
         }
 
+        private void StudentPage_Individual_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -118,16 +118,17 @@
             // 
             // StudentPage_Individual
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(522, 539);
+            ClientSize = new Size(682, 452);
             Enabled = false;
-            Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(3, 4, 3, 4);
+            Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4);
             Name = "StudentPage_Individual";
             Text = "Student Details";
             TransparencyKey = Color.FromArgb(255, 192, 192);
+            Load += StudentPage_Individual_Load;
             ResumeLayout(false);
         }
 

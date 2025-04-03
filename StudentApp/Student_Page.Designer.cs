@@ -25,14 +25,18 @@ namespace StudentApp
             // 
             // studentGridView
             // 
-            studentGridView.BackgroundColor = SystemColors.ActiveCaption;
+            studentGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            studentGridView.BackgroundColor = SystemColors.ControlLightLight;
+            studentGridView.BorderStyle = BorderStyle.Fixed3D;
+            studentGridView.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             studentGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             studentGridView.Columns.AddRange(new DataGridViewColumn[] { ViewBtn });
-            studentGridView.Location = new Point(12, 6);
-            studentGridView.Margin = new Padding(4, 5, 4, 5);
+            studentGridView.GridColor = SystemColors.GrayText;
+            studentGridView.Location = new Point(13, 7);
+            studentGridView.Margin = new Padding(4, 6, 4, 6);
             studentGridView.Name = "studentGridView";
             studentGridView.RowHeadersWidth = 51;
-            studentGridView.Size = new Size(430, 236);
+            studentGridView.Size = new Size(410, 271);
             studentGridView.TabIndex = 0;
             studentGridView.CellContentClick += studentGridView_CellContentClick;
             // 
@@ -43,16 +47,16 @@ namespace StudentApp
             ViewBtn.Name = "ViewBtn";
             ViewBtn.Text = "VIEW";
             ViewBtn.UseColumnTextForButtonValue = true;
-            ViewBtn.Width = 80;
+            ViewBtn.Width = 68;
             // 
             // Student_Page
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(457, 256);
+            ClientSize = new Size(429, 292);
             Controls.Add(studentGridView);
-            Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 5, 4, 5);
+            Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 6, 4, 6);
             Name = "Student_Page";
             Text = "Student Page";
             Load += Student_Page_Load;
